@@ -4,7 +4,7 @@ sync_devices:
     commands:
       - command: "show system"
         parser: "ttp"
-        jpath: "hostname"
+        jpath: "[0].hostname"
   serial:
     commands:
       - command: "show inventory"
