@@ -9,12 +9,12 @@ sync_devices:
     commands:
       - command: "show inventory"
         parser: "ttp"
-        jpath: "inventory[?(@.name=='1')].sn"
+        jpath: "[0].inventory[?(@.name=='1')].sn"
   device_type:
     commands:
       - command: "show inventory"
         parser: "ttp"
-        jpath: "inventory[?(@.name=='1')].pid"
+        jpath: "[0].inventory[?(@.name=='1')].pid"
   mgmt_interface:
     commands:
       - command: "show ip interface"
