@@ -1,0 +1,7 @@
+System Description: {{ description | ORPHRASE }}
+System Up Time (days,hour:min:sec): {{ uptime }}
+System Contact: {{ contact | ORPHRASE }}
+System Name: {{ hostname }}
+System Location: {{ location | ORPHRASE }}
+System MAC Address: {{ mac | MAC}}
+System Object ID: {{ system_oid }}
