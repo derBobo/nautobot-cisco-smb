@@ -4,17 +4,17 @@ sync_devices:
     commands:
       - command: "show system"
         parser: "textfsm"
-        jpath: "[*].system_name"
+        jpath: "[*].hostname"
   serial:
     commands:
       - command: "show inventory"
-        parser: "textfsm"
-        jpath: "[?name=='1'].sn"
+        parser: "ttp"
+        jpath: "inventory[?(@.name=='1')].sn"
   device_type:
     commands:
       - command: "show inventory"
         parser: "textfsm"
-        jpath: "[?name=='1'].pid"
+        jpath: "[inventory[?(@.name=='1')].pid"
   mgmt_interface:
     commands:
       - command: "show ip interface"

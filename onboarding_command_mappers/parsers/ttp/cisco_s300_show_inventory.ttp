@@ -1,0 +1,4 @@
+<group name="inventory">
+NAME: "{{ name }}"   DESCR: "{{ descr | ORPHRASE }}"
+PID: {{ pid }}  VID: {{ vid }}   SN: {{ sn }}
+</group>
