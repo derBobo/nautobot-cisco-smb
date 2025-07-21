@@ -9,7 +9,7 @@ sync_devices:
     commands:
       - command: "show inventory"
         parser: "ttp"
-        jpath: "inventory[?name=='1'] | [0]"
+        jpath: "[0]"
   device_type:
     commands:
       - command: "show inventory"
