@@ -19,7 +19,7 @@ sync_devices:
     commands:
       - command: "show ip interface"
         parser: "ttp"
-        jpath: "[0].interfaces[? ip_address == '{{ obj }}' ] | [0].ip_address"
+        jpath: "[0].interfaces[? ip_address == '{{ obj }}' ] | [0].interface"
   mask_length:
     commands:
       - command: "show ip interface"
