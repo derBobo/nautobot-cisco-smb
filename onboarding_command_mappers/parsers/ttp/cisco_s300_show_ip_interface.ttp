@@ -1,3 +1,3 @@
 <group name="interfaces" method="table" >
-{{ ip_address | IP }}/{{ mask }} {{ interface | ORPHRASE }} {{ admin_status | re("UP|DOWN") }}/{{ oper_status | re("UP|DOWN") }} {{ type | re("Static|DHCP") }}  {{ directed_broadcast }} {{ prec }} {{ redirect }} {{ valid }}
+{{ ip_address | IP }}/{{ mask }} {{ interface | ORPHRASE }} {{ admin_status }}/{{ oper_status }} {{ type }}  {{ directed_broadcast }} {{ prec }} {{ redirect }} {{ valid }}
 </group>
