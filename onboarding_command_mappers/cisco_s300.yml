@@ -19,7 +19,7 @@ sync_devices:
     commands:
       - command: "show ip interface"
         parser: "ttp"
-        jpath: "[0].interfaces "
+        jpath: "[0] "
   mask_length:
     commands:
       - command: "show ip interface"
