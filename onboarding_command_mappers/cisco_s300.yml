@@ -9,12 +9,12 @@ sync_devices:
     commands:
       - command: "show inventory"
         parser: "ttp"
-        jpath: "[0]"
+        jpath: "[0].inventory"
   device_type:
     commands:
       - command: "show inventory"
         parser: "ttp"
-        jpath: "[0]"
+        jpath: "[0].inventory"
   mgmt_interface:
     commands:
       - command: "show ip interface"
