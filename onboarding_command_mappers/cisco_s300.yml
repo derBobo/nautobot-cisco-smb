@@ -14,7 +14,7 @@ sync_devices:
     commands:
       - command: "show inventory"
         parser: "ttp"
-        jpath: "[0].inventory"
+        jpath: "[0].inventory[? name == '1'] | [0].pid"
   mgmt_interface:
     commands:
       - command: "show ip interface"
