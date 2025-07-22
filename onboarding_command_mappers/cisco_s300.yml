@@ -19,11 +19,10 @@ sync_devices:
     commands:
       - command: "show ip interface"
         parser: "ttp"
-        jpath: "[0] "
+        jpath: "[0].interfaces[? ip_address == '{{ obj }}' ] | [0].ip_address "
   mask_length:
     commands:
       - command: "show ip interface"
         parser: "ttp"
         jpath: "[0].interfaces[? ip_address == '{{ obj }}' ] | [0].mask"
-        post_processor: "{% if '/' in obj[0] %}{{ obj[0].split('/')[1] }}{% else %}31{% endif %}"
         iterable_type: "int"
