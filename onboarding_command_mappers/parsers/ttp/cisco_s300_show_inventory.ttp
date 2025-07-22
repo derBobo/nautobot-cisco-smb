@@ -1,4 +1,4 @@
-<group name="inventory">
+<group name="inventory*">
 NAME: "{{ name }}" DESCR: "{{ desc | _line_ }}"
 PID: {{ pid }} VID: {{ vid }} SN: {{ sn }}
 </group>
